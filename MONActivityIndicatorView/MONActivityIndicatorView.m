@@ -1,9 +1,7 @@
 //
 //  MONActivityIndicatorView.m
-//  MONActivityIndicatorViewDemo
 //
 //  Created by Mounir Ybanez on 4/24/14.
-//  Copyright (c) 2014 Moaner. All rights reserved.
 //
 
 #import <QuartzCore/QuartzCore.h>
@@ -11,35 +9,44 @@
 
 @interface MONActivityIndicatorView ()
 
-/**
- */
+/** The default color of each circle. */
 @property (strong, nonatomic) UIColor *defaultColor;
 
-/**
- */
+/** The container of the circles. */
 @property (strong, nonatomic) UIView *contentView;
 
-/**
- */
+/** An indicator whether the activity indicator view is animating. */
 @property (readwrite, nonatomic) BOOL isAnimating;
 
 /**
+ Sets up default values
  */
 - (void)setupDefaults;
 
 /**
+ Adds circles.
  */
 - (void)addCircles;
 
 /**
+ Removes circles.
  */
 - (void)removeCircles;
 
 /**
+ Creates the circle view.
+ @param radius The radius of the circle.
+ @param color The background color of the circle.
+ @param positionX The x-position of the circle in the contentView.
+ @return The circle view.
  */
 - (UIView *)createCircleWithRadius:(CGFloat)radius color:(UIColor *)color positionX:(CGFloat)x;
 
 /**
+ Creates the animation of the circle.
+ @param duration The duration of the animation.
+ @param delay The delay of the animation
+ @return The animation of the circle.
  */
 - (CABasicAnimation *)createAnimationWithDuration:(CGFloat)duration delay:(CGFloat)delay;
 
