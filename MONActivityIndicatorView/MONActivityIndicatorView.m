@@ -12,9 +12,6 @@
 /** The default color of each circle. */
 @property (strong, nonatomic) UIColor *defaultColor;
 
-/** The container of the circles. */
-@property (strong, nonatomic) UIView *contentView;
-
 /** An indicator whether the activity indicator view is animating. */
 @property (readwrite, nonatomic) BOOL isAnimating;
 
@@ -32,6 +29,11 @@
  Removes circles.
  */
 - (void)removeCircles;
+
+/**
+ Adjusts self's frame.
+ */
+- (void)adjustFrame;
 
 /**
  Creates the circle view.
@@ -87,7 +89,7 @@
 - (void)setupDefaults {
   self.translatesAutoresizingMaskIntoConstraints = NO;
   self.numberOfCircles = 5;
-  self.internalSpacing = 20;
+  self.internalSpacing = 5;
   self.radius = 10;
   self.delay = 0.2;
   self.duration = 0.8;
@@ -100,6 +102,7 @@
   UIView *circle = [[UIView alloc] initWithFrame:CGRectMake(x, 0, radius * 2, radius * 2)];
   circle.backgroundColor = color;
   circle.layer.cornerRadius = radius;
+  circle.translatesAutoresizingMaskIntoConstraints = NO;
   return circle;
 }
 
@@ -118,50 +121,31 @@
 }
 
 - (void)addCircles {
-  self.contentView = [[UIView alloc] initWithFrame:CGRectZero];
   for (NSUInteger i = 0; i < self.numberOfCircles; i++) {
-    UIView *circle = [self createCircleWithRadius:self.radius color:[UIColor blueColor] positionX:(i * self.internalSpacing)];
     UIColor *color = nil;
     if (self.delegate && [self.delegate respondsToSelector:@selector(activityIndicatorView:circleBackgroundColorAtIndex:)]) {
       color = [self.delegate activityIndicatorView:self circleBackgroundColorAtIndex:i];
     }
-    circle.backgroundColor = (color == nil) ? self.defaultColor : color;
-    circle.transform = CGAffineTransformMakeScale(0, 0);
+    UIView *circle = [self createCircleWithRadius:self.radius
+                                            color:(color == nil) ? self.defaultColor : color
+                                        positionX:(i * ((2 * self.radius) + self.internalSpacing))];
+    [circle setTransform:CGAffineTransformMakeScale(0, 0)];
     [circle.layer addAnimation:[self createAnimationWithDuration:self.duration delay:(i * self.delay)] forKey:@"scale"];
-    [self.contentView addSubview:circle];
-    // Last circle
-    if (i == self.numberOfCircles - 1) {
-      CGRect frame = self.contentView.frame;
-      frame.size.height = circle.frame.size.height;
-      frame.size.width = CGRectGetMaxX(circle.frame);
-      self.contentView.frame = frame;
-    }
+    [self addSubview:circle];
   }
-  [self addSubview:self.contentView];
-  [self addConstraint:
-   [NSLayoutConstraint constraintWithItem:self.contentView
-                                attribute:NSLayoutAttributeCenterX
-                                relatedBy:NSLayoutRelationEqual
-                                   toItem:self
-                                attribute:NSLayoutAttributeCenterX
-                               multiplier:1.0f
-                                 constant:0.0f]];
-  [self addConstraint:
-   [NSLayoutConstraint constraintWithItem:self.contentView
-                                attribute:NSLayoutAttributeCenterY
-                                relatedBy:NSLayoutRelationEqual
-                                   toItem:self
-                                attribute:NSLayoutAttributeCenterY
-                               multiplier:1.0f
-                                 constant:0.0f]];
-
 }
 
 - (void)removeCircles {
-  [self.contentView.subviews enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
+  [self.subviews enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
     [obj removeFromSuperview];
   }];
-  self.contentView = nil;
+}
+
+- (void)adjustFrame {
+  CGRect frame = self.frame;
+  frame.size.width = (self.numberOfCircles * ((2 * self.radius) + self.internalSpacing)) - self.internalSpacing;
+  frame.size.height = self.radius * 2;
+  self.frame = frame;
 }
 
 #pragma mark -
@@ -181,6 +165,24 @@
     self.hidden = YES;
     self.isAnimating = NO;
   }
+}
+
+#pragma mark -
+#pragma mark - Custom Setters and Getters
+
+- (void)setNumberOfCircles:(NSUInteger)numberOfCircles {
+  _numberOfCircles = numberOfCircles;
+  [self adjustFrame];
+}
+
+- (void)setRadius:(CGFloat)radius {
+  _radius = radius;
+  [self adjustFrame];
+}
+
+- (void)setInternalSpacing:(CGFloat)internalSpacing {
+  _internalSpacing = internalSpacing;
+  [self adjustFrame];
 }
 
 @end

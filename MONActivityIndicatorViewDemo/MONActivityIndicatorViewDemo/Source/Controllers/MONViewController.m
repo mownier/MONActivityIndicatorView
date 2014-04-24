@@ -15,42 +15,22 @@
 
 @implementation MONViewController
 
+#pragma mark -
+#pragma mark - Loading Views
+
 - (void)viewDidLoad {
   [super viewDidLoad];
   
   MONActivityIndicatorView *indicatorView = [[MONActivityIndicatorView alloc] init];
-  indicatorView.numberOfCircles = 4;
   indicatorView.delegate = self;
-  indicatorView.radius = 8;
-  [self.view addSubview:indicatorView];
-  [self.view addConstraint:
-   [NSLayoutConstraint constraintWithItem:indicatorView
-                                attribute:NSLayoutAttributeCenterX
-                                relatedBy:NSLayoutRelationEqual
-                                   toItem:self.view
-                                attribute:NSLayoutAttributeCenterX
-                               multiplier:1.0f
-                                 constant:0.0f]];
-  [self.view addConstraint:
-   [NSLayoutConstraint constraintWithItem:indicatorView
-                                attribute:NSLayoutAttributeCenterY
-                                relatedBy:NSLayoutRelationEqual
-                                   toItem:self.view
-                                attribute:NSLayoutAttributeCenterY
-                               multiplier:1.0f
-                                 constant:0.0f]];
-  
+  indicatorView.numberOfCircles = 3;
+  indicatorView.radius = 20;
+  indicatorView.internalSpacing = 3;
+  indicatorView.center = self.view.center;
   [indicatorView startAnimating];
-  [NSTimer scheduledTimerWithTimeInterval:5.0
-                                   target:indicatorView
-                                 selector:@selector(stopAnimating)
-                                 userInfo:nil
-                                  repeats:NO];
-  [NSTimer scheduledTimerWithTimeInterval:7.0
-                                   target:indicatorView
-                                 selector:@selector(startAnimating)
-                                 userInfo:nil
-                                  repeats:NO];
+  [self.view addSubview:indicatorView];
+  [NSTimer scheduledTimerWithTimeInterval:7 target:indicatorView selector:@selector(stopAnimating) userInfo:nil repeats:NO];
+  [NSTimer scheduledTimerWithTimeInterval:9 target:indicatorView selector:@selector(startAnimating) userInfo:nil repeats:NO];
 }
 
 #pragma mark -
