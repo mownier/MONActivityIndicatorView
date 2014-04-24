@@ -15,6 +15,19 @@ MONActivityIndicatorView is an awesome custom activity indicator view for iOS.
 
 ## Usage
 
+### Initialization
+``` objective-c
+- (void)viewDidLoad {
+  MONActivityIndicatorView *indicatorView = [[MONActivityIndicatorView alloc] init];
+  [self.view addSubview:indicatorView];
+}
+```
+
+### Starting and Stopping the Indicator
+``` objective-c
+[indicatorView startAnimating];
+[indicatorView stopAnimating];
+```
 
 
 ## Customization

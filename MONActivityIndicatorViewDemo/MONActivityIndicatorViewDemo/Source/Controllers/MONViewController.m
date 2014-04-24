@@ -18,7 +18,7 @@
 - (void)viewDidLoad {
   [super viewDidLoad];
   
-  MONActivityIndicatorView *indicatorView = [[MONActivityIndicatorView alloc] initWithFrame:CGRectMake(10, 40, 200, 100)];
+  MONActivityIndicatorView *indicatorView = [[MONActivityIndicatorView alloc] init];
   indicatorView.numberOfCircles = 4;
   indicatorView.delegate = self;
   indicatorView.radius = 8;
