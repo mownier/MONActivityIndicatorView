@@ -18,7 +18,7 @@ MONActivityIndicatorView is an awesome custom activity indicator view for iOS.
 ### Initialization
 ``` objective-c
 - (void)viewDidLoad {
-  [super viewDidLoad]
+  [super viewDidLoad];
 
   MONActivityIndicatorView *indicatorView = [[MONActivityIndicatorView alloc] init];
   [self.view addSubview:indicatorView];
@@ -68,6 +68,21 @@ First, assign the `MONActivityIndicatorViewDelegate` protocol to a view controll
 @end
 
 @implementation ViewController
+
+- (void)viewDidLoad {
+  [super viewDidLoad];
+  
+  MONActivityIndicatorView *indicatorView = [[MONActivityIndicatorView alloc] init];
+  indicatorView.delegate = self;
+  indicatorView.numberOfCircles = 3;
+  indicatorView.radius = 20;
+  indicatorView.internalSpacing = 3;
+  indicatorView.duration = 0.5;
+  indicatorView.delay = 0.5
+  indicatorView.center = self.view.center;
+  [self.view addSubview:indicatorView];
+  [indicatorView startAnimating];
+}
 
 - (UIColor *)activityIndicatorView:(MONActivityIndicatorView *)activityIndicatorView
       circleBackgroundColorAtIndex:(NSUInteger)index {
