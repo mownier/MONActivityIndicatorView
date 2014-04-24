@@ -22,6 +22,7 @@
 		198CC3401908B1950043DB47 /* MONAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 198CC33B1908B1950043DB47 /* MONAppDelegate.m */; };
 		198CC3411908B1950043DB47 /* MONViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 198CC33E1908B1950043DB47 /* MONViewController.m */; };
 		198CC34A1908B2570043DB47 /* MONActivityIndicatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 198CC3491908B2570043DB47 /* MONActivityIndicatorView.m */; };
+		198CC34C1908BA9C0043DB47 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 198CC34B1908BA9C0043DB47 /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,7 @@
 		198CC33E1908B1950043DB47 /* MONViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MONViewController.m; sourceTree = "<group>"; };
 		198CC3481908B2570043DB47 /* MONActivityIndicatorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MONActivityIndicatorView.h; sourceTree = "<group>"; };
 		198CC3491908B2570043DB47 /* MONActivityIndicatorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MONActivityIndicatorView.m; sourceTree = "<group>"; };
+		198CC34B1908BA9C0043DB47 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				198CC34C1908BA9C0043DB47 /* QuartzCore.framework in Frameworks */,
 				190B35BC1908AF37002606C2 /* CoreGraphics.framework in Frameworks */,
 				190B35BE1908AF37002606C2 /* UIKit.framework in Frameworks */,
 				190B35BA1908AF37002606C2 /* Foundation.framework in Frameworks */,
@@ -104,6 +107,7 @@
 		190B35B81908AF37002606C2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				198CC34B1908BA9C0043DB47 /* QuartzCore.framework */,
 				190B35B91908AF37002606C2 /* Foundation.framework */,
 				190B35BB1908AF37002606C2 /* CoreGraphics.framework */,
 				190B35BD1908AF37002606C2 /* UIKit.framework */,
