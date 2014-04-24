@@ -2,6 +2,8 @@
 
 MONActivityIndicatorView is an awesome custom activity indicator view for iOS.
 
+![MONActivityIndicatorView] (https://github.com/mownier/MONActivityIndicatorView/blob/master/MONActivityIndicatorView-Screenshot.gif)
+
 ## Installation
 
 ### Manual Install
