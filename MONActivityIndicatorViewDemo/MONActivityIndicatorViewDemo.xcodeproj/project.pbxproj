@@ -1,0 +1,529 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		190B35BA1908AF37002606C2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 190B35B91908AF37002606C2 /* Foundation.framework */; };
+		190B35BC1908AF37002606C2 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 190B35BB1908AF37002606C2 /* CoreGraphics.framework */; };
+		190B35BE1908AF37002606C2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 190B35BD1908AF37002606C2 /* UIKit.framework */; };
+		190B35C41908AF37002606C2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 190B35C21908AF37002606C2 /* InfoPlist.strings */; };
+		190B35C61908AF37002606C2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 190B35C51908AF37002606C2 /* main.m */; };
+		190B35CD1908AF37002606C2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 190B35CB1908AF37002606C2 /* Main.storyboard */; };
+		190B35D21908AF37002606C2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 190B35D11908AF37002606C2 /* Images.xcassets */; };
+		190B35D91908AF37002606C2 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 190B35D81908AF37002606C2 /* XCTest.framework */; };
+		190B35DA1908AF37002606C2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 190B35B91908AF37002606C2 /* Foundation.framework */; };
+		190B35DB1908AF37002606C2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 190B35BD1908AF37002606C2 /* UIKit.framework */; };
+		190B35E31908AF37002606C2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 190B35E11908AF37002606C2 /* InfoPlist.strings */; };
+		190B35E51908AF37002606C2 /* MONActivityIndicatorViewDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 190B35E41908AF37002606C2 /* MONActivityIndicatorViewDemoTests.m */; };
+		198CC3401908B1950043DB47 /* MONAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 198CC33B1908B1950043DB47 /* MONAppDelegate.m */; };
+		198CC3411908B1950043DB47 /* MONViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 198CC33E1908B1950043DB47 /* MONViewController.m */; };
+		198CC34A1908B2570043DB47 /* MONActivityIndicatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 198CC3491908B2570043DB47 /* MONActivityIndicatorView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		190B35DC1908AF37002606C2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 190B35AE1908AF37002606C2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 190B35B51908AF37002606C2;
+			remoteInfo = MONActivityIndicatorViewDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		190B35B61908AF37002606C2 /* MONActivityIndicatorViewDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MONActivityIndicatorViewDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		190B35B91908AF37002606C2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		190B35BB1908AF37002606C2 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		190B35BD1908AF37002606C2 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		190B35C11908AF37002606C2 /* MONActivityIndicatorViewDemo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MONActivityIndicatorViewDemo-Info.plist"; sourceTree = "<group>"; };
+		190B35C31908AF37002606C2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		190B35C51908AF37002606C2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		190B35C71908AF37002606C2 /* MONActivityIndicatorViewDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MONActivityIndicatorViewDemo-Prefix.pch"; sourceTree = "<group>"; };
+		190B35CC1908AF37002606C2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		190B35D11908AF37002606C2 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = ../../Images.xcassets; sourceTree = "<group>"; };
+		190B35D71908AF37002606C2 /* MONActivityIndicatorViewDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MONActivityIndicatorViewDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		190B35D81908AF37002606C2 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		190B35E01908AF37002606C2 /* MONActivityIndicatorViewDemoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MONActivityIndicatorViewDemoTests-Info.plist"; sourceTree = "<group>"; };
+		190B35E21908AF37002606C2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		190B35E41908AF37002606C2 /* MONActivityIndicatorViewDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MONActivityIndicatorViewDemoTests.m; sourceTree = "<group>"; };
+		198CC33A1908B1950043DB47 /* MONAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MONAppDelegate.h; sourceTree = "<group>"; };
+		198CC33B1908B1950043DB47 /* MONAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MONAppDelegate.m; sourceTree = "<group>"; };
+		198CC33D1908B1950043DB47 /* MONViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MONViewController.h; sourceTree = "<group>"; };
+		198CC33E1908B1950043DB47 /* MONViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MONViewController.m; sourceTree = "<group>"; };
+		198CC3481908B2570043DB47 /* MONActivityIndicatorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MONActivityIndicatorView.h; sourceTree = "<group>"; };
+		198CC3491908B2570043DB47 /* MONActivityIndicatorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MONActivityIndicatorView.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		190B35B31908AF37002606C2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				190B35BC1908AF37002606C2 /* CoreGraphics.framework in Frameworks */,
+				190B35BE1908AF37002606C2 /* UIKit.framework in Frameworks */,
+				190B35BA1908AF37002606C2 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		190B35D41908AF37002606C2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				190B35D91908AF37002606C2 /* XCTest.framework in Frameworks */,
+				190B35DB1908AF37002606C2 /* UIKit.framework in Frameworks */,
+				190B35DA1908AF37002606C2 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		190B35AD1908AF37002606C2 = {
+			isa = PBXGroup;
+			children = (
+				190B35BF1908AF37002606C2 /* MONActivityIndicatorViewDemo */,
+				190B35DE1908AF37002606C2 /* MONActivityIndicatorViewDemoTests */,
+				190B35B81908AF37002606C2 /* Frameworks */,
+				190B35B71908AF37002606C2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		190B35B71908AF37002606C2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				190B35B61908AF37002606C2 /* MONActivityIndicatorViewDemo.app */,
+				190B35D71908AF37002606C2 /* MONActivityIndicatorViewDemoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		190B35B81908AF37002606C2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				190B35B91908AF37002606C2 /* Foundation.framework */,
+				190B35BB1908AF37002606C2 /* CoreGraphics.framework */,
+				190B35BD1908AF37002606C2 /* UIKit.framework */,
+				190B35D81908AF37002606C2 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		190B35BF1908AF37002606C2 /* MONActivityIndicatorViewDemo */ = {
+			isa = PBXGroup;
+			children = (
+				198CC3381908B1950043DB47 /* Source */,
+				190B35C01908AF37002606C2 /* Supporting Files */,
+			);
+			path = MONActivityIndicatorViewDemo;
+			sourceTree = "<group>";
+		};
+		190B35C01908AF37002606C2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				190B35C11908AF37002606C2 /* MONActivityIndicatorViewDemo-Info.plist */,
+				190B35C21908AF37002606C2 /* InfoPlist.strings */,
+				190B35C51908AF37002606C2 /* main.m */,
+				190B35C71908AF37002606C2 /* MONActivityIndicatorViewDemo-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		190B35DE1908AF37002606C2 /* MONActivityIndicatorViewDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				190B35E41908AF37002606C2 /* MONActivityIndicatorViewDemoTests.m */,
+				190B35DF1908AF37002606C2 /* Supporting Files */,
+			);
+			path = MONActivityIndicatorViewDemoTests;
+			sourceTree = "<group>";
+		};
+		190B35DF1908AF37002606C2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				190B35E01908AF37002606C2 /* MONActivityIndicatorViewDemoTests-Info.plist */,
+				190B35E11908AF37002606C2 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		198CC3381908B1950043DB47 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				198CC3391908B1950043DB47 /* AppDelegate */,
+				198CC33C1908B1950043DB47 /* Controllers */,
+				198CC3421908B1B40043DB47 /* Resources */,
+				198CC3461908B2570043DB47 /* Views */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		198CC3391908B1950043DB47 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				198CC33A1908B1950043DB47 /* MONAppDelegate.h */,
+				198CC33B1908B1950043DB47 /* MONAppDelegate.m */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		198CC33C1908B1950043DB47 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				198CC33D1908B1950043DB47 /* MONViewController.h */,
+				198CC33E1908B1950043DB47 /* MONViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		198CC3421908B1B40043DB47 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				190B35CB1908AF37002606C2 /* Main.storyboard */,
+				190B35D11908AF37002606C2 /* Images.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		198CC3461908B2570043DB47 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				198CC3471908B2570043DB47 /* MONActivityIndicatorView */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		198CC3471908B2570043DB47 /* MONActivityIndicatorView */ = {
+			isa = PBXGroup;
+			children = (
+				198CC3481908B2570043DB47 /* MONActivityIndicatorView.h */,
+				198CC3491908B2570043DB47 /* MONActivityIndicatorView.m */,
+			);
+			path = MONActivityIndicatorView;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		190B35B51908AF37002606C2 /* MONActivityIndicatorViewDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 190B35E81908AF37002606C2 /* Build configuration list for PBXNativeTarget "MONActivityIndicatorViewDemo" */;
+			buildPhases = (
+				190B35B21908AF37002606C2 /* Sources */,
+				190B35B31908AF37002606C2 /* Frameworks */,
+				190B35B41908AF37002606C2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MONActivityIndicatorViewDemo;
+			productName = MONActivityIndicatorViewDemo;
+			productReference = 190B35B61908AF37002606C2 /* MONActivityIndicatorViewDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		190B35D61908AF37002606C2 /* MONActivityIndicatorViewDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 190B35EB1908AF37002606C2 /* Build configuration list for PBXNativeTarget "MONActivityIndicatorViewDemoTests" */;
+			buildPhases = (
+				190B35D31908AF37002606C2 /* Sources */,
+				190B35D41908AF37002606C2 /* Frameworks */,
+				190B35D51908AF37002606C2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				190B35DD1908AF37002606C2 /* PBXTargetDependency */,
+			);
+			name = MONActivityIndicatorViewDemoTests;
+			productName = MONActivityIndicatorViewDemoTests;
+			productReference = 190B35D71908AF37002606C2 /* MONActivityIndicatorViewDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		190B35AE1908AF37002606C2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = MON;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = Moaner;
+				TargetAttributes = {
+					190B35D61908AF37002606C2 = {
+						TestTargetID = 190B35B51908AF37002606C2;
+					};
+				};
+			};
+			buildConfigurationList = 190B35B11908AF37002606C2 /* Build configuration list for PBXProject "MONActivityIndicatorViewDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 190B35AD1908AF37002606C2;
+			productRefGroup = 190B35B71908AF37002606C2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				190B35B51908AF37002606C2 /* MONActivityIndicatorViewDemo */,
+				190B35D61908AF37002606C2 /* MONActivityIndicatorViewDemoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		190B35B41908AF37002606C2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				190B35D21908AF37002606C2 /* Images.xcassets in Resources */,
+				190B35C41908AF37002606C2 /* InfoPlist.strings in Resources */,
+				190B35CD1908AF37002606C2 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		190B35D51908AF37002606C2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				190B35E31908AF37002606C2 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		190B35B21908AF37002606C2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				198CC34A1908B2570043DB47 /* MONActivityIndicatorView.m in Sources */,
+				198CC3411908B1950043DB47 /* MONViewController.m in Sources */,
+				190B35C61908AF37002606C2 /* main.m in Sources */,
+				198CC3401908B1950043DB47 /* MONAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		190B35D31908AF37002606C2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				190B35E51908AF37002606C2 /* MONActivityIndicatorViewDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		190B35DD1908AF37002606C2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 190B35B51908AF37002606C2 /* MONActivityIndicatorViewDemo */;
+			targetProxy = 190B35DC1908AF37002606C2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		190B35C21908AF37002606C2 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				190B35C31908AF37002606C2 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		190B35CB1908AF37002606C2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				190B35CC1908AF37002606C2 /* Base */,
+			);
+			name = Main.storyboard;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		190B35E11908AF37002606C2 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				190B35E21908AF37002606C2 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		190B35E61908AF37002606C2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		190B35E71908AF37002606C2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		190B35E91908AF37002606C2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MONActivityIndicatorViewDemo/MONActivityIndicatorViewDemo-Prefix.pch";
+				INFOPLIST_FILE = "MONActivityIndicatorViewDemo/MONActivityIndicatorViewDemo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		190B35EA1908AF37002606C2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MONActivityIndicatorViewDemo/MONActivityIndicatorViewDemo-Prefix.pch";
+				INFOPLIST_FILE = "MONActivityIndicatorViewDemo/MONActivityIndicatorViewDemo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		190B35EC1908AF37002606C2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MONActivityIndicatorViewDemo.app/MONActivityIndicatorViewDemo";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MONActivityIndicatorViewDemo/MONActivityIndicatorViewDemo-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "MONActivityIndicatorViewDemoTests/MONActivityIndicatorViewDemoTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		190B35ED1908AF37002606C2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MONActivityIndicatorViewDemo.app/MONActivityIndicatorViewDemo";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MONActivityIndicatorViewDemo/MONActivityIndicatorViewDemo-Prefix.pch";
+				INFOPLIST_FILE = "MONActivityIndicatorViewDemoTests/MONActivityIndicatorViewDemoTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		190B35B11908AF37002606C2 /* Build configuration list for PBXProject "MONActivityIndicatorViewDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				190B35E61908AF37002606C2 /* Debug */,
+				190B35E71908AF37002606C2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		190B35E81908AF37002606C2 /* Build configuration list for PBXNativeTarget "MONActivityIndicatorViewDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				190B35E91908AF37002606C2 /* Debug */,
+				190B35EA1908AF37002606C2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		190B35EB1908AF37002606C2 /* Build configuration list for PBXNativeTarget "MONActivityIndicatorViewDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				190B35EC1908AF37002606C2 /* Debug */,
+				190B35ED1908AF37002606C2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 190B35AE1908AF37002606C2 /* Project object */;
+}
