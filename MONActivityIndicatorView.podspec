@@ -4,7 +4,7 @@ Pod::Spec.new do |s|
   s.platform = :ios, '7.0'
   s.license  = 'MIT'
   s.homepage = 'https://github.com/mownier/MONActivityIndicatorView'
-  s.author   = { 'Mounir Ybanez' => '' }
+  s.author   = { 'Mounir Ybanez' => 'rinuom91@gmail.com' }
   s.source   = { :git => 'https://github.com/mownier/MONActivityIndicatorView.git', :tag => s.version.to_s }
   s.description = 'An awesome custom activity indicator view for iOS.'
   s.frameworks   = 'QuartzCore'
