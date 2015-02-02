@@ -26,7 +26,7 @@
 @property (readwrite, nonatomic) CGFloat duration;
 
 /** The assigned delegate */
-@property (strong, nonatomic) id<MONActivityIndicatorViewDelegate> delegate;
+@property (weak, nonatomic) id<MONActivityIndicatorViewDelegate> delegate;
 
 
 /**
