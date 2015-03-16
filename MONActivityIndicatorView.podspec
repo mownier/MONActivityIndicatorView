@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name     = 'MONActivityIndicatorView'
-  s.version  = '0.0.1'
+  s.version  = '0.0.2'
   s.summary  = 'An awesome custom activity indicator view for iOS.'
   s.platform = :ios, '7.0'
   s.license  = { :type => 'MIT', :file => 'LICENSE.txt' }
