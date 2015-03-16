@@ -22,7 +22,7 @@
 		198CC3401908B1950043DB47 /* MONAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 198CC33B1908B1950043DB47 /* MONAppDelegate.m */; };
 		198CC3411908B1950043DB47 /* MONViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 198CC33E1908B1950043DB47 /* MONViewController.m */; };
 		198CC34C1908BA9C0043DB47 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 198CC34B1908BA9C0043DB47 /* QuartzCore.framework */; };
-		198CC3521908EFE80043DB47 /* MONActivityIndicatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 198CC3501908EFE80043DB47 /* MONActivityIndicatorView.m */; };
+		DF8824EE1AB6C04F00CA08ED /* MONActivityIndicatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = DF8824EC1AB6C04F00CA08ED /* MONActivityIndicatorView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,8 +56,8 @@
 		198CC33D1908B1950043DB47 /* MONViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MONViewController.h; sourceTree = "<group>"; };
 		198CC33E1908B1950043DB47 /* MONViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MONViewController.m; sourceTree = "<group>"; };
 		198CC34B1908BA9C0043DB47 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
-		198CC34F1908EFE80043DB47 /* MONActivityIndicatorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MONActivityIndicatorView.h; sourceTree = "<group>"; };
-		198CC3501908EFE80043DB47 /* MONActivityIndicatorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MONActivityIndicatorView.m; sourceTree = "<group>"; };
+		DF8824EB1AB6C04F00CA08ED /* MONActivityIndicatorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MONActivityIndicatorView.h; sourceTree = "<group>"; };
+		DF8824EC1AB6C04F00CA08ED /* MONActivityIndicatorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MONActivityIndicatorView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,7 +160,7 @@
 				198CC3391908B1950043DB47 /* AppDelegate */,
 				198CC33C1908B1950043DB47 /* Controllers */,
 				198CC3421908B1B40043DB47 /* Resources */,
-				198CC3461908B2570043DB47 /* Views */,
+				DF8824E81AB6C04F00CA08ED /* Views */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -192,22 +192,21 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
-		198CC3461908B2570043DB47 /* Views */ = {
+		DF8824E81AB6C04F00CA08ED /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				198CC34D1908EFE80043DB47 /* MONActivityIndicatorView */,
+				DF8824E91AB6C04F00CA08ED /* MONActivityIndicatorView */,
 			);
 			path = Views;
 			sourceTree = "<group>";
 		};
-		198CC34D1908EFE80043DB47 /* MONActivityIndicatorView */ = {
+		DF8824E91AB6C04F00CA08ED /* MONActivityIndicatorView */ = {
 			isa = PBXGroup;
 			children = (
-				198CC34F1908EFE80043DB47 /* MONActivityIndicatorView.h */,
-				198CC3501908EFE80043DB47 /* MONActivityIndicatorView.m */,
+				DF8824EB1AB6C04F00CA08ED /* MONActivityIndicatorView.h */,
+				DF8824EC1AB6C04F00CA08ED /* MONActivityIndicatorView.m */,
 			);
-			name = MONActivityIndicatorView;
-			path = ../../../../MONActivityIndicatorView;
+			path = MONActivityIndicatorView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -308,7 +307,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				198CC3521908EFE80043DB47 /* MONActivityIndicatorView.m in Sources */,
+				DF8824EE1AB6C04F00CA08ED /* MONActivityIndicatorView.m in Sources */,
 				198CC3411908B1950043DB47 /* MONViewController.m in Sources */,
 				190B35C61908AF37002606C2 /* main.m in Sources */,
 				198CC3401908B1950043DB47 /* MONAppDelegate.m in Sources */,
