@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name     = 'MONActivityIndicatorView'
-  s.version  = '0.0.2'
+  s.version  = '0.0.3'
   s.summary  = 'An awesome custom activity indicator view for iOS.'
   s.platform = :ios, '7.0'
   s.license  = { :type => 'MIT', :file => 'LICENSE.txt' }
@@ -8,6 +8,6 @@ Pod::Spec.new do |s|
   s.author   = { 'Mounir Ybanez' => 'rinuom91@gmail.com' }
   s.source   = { :git => 'https://github.com/mownier/MONActivityIndicatorView.git', :tag => s.version.to_s }
   s.frameworks   = 'QuartzCore'
-  s.source_files = 'MONActivityIndicatorView/*.{h,m}'
+  s.source_files = 'MONActivityIndicatorViewDemo/MONActivityIndicatorViewDemo/Source/Views/MONActivityIndicatorView/*.{h,m}'
   s.requires_arc = true
 end
