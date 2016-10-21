@@ -6,6 +6,15 @@
 
 #import <UIKit/UIKit.h>
 
+
+//! Project version number for MONActivityIndicatorView.
+FOUNDATION_EXPORT double MONActivityIndicatorViewVersionNumber;
+
+//! Project version string for MONActivityIndicatorView.
+FOUNDATION_EXPORT const unsigned char MONActivityIndicatorViewVersionString[];
+
+// In this header, you should import all the public headers of your framework using statements like #import <MONActivityIndicatorView/PublicHeader.h>
+
 @protocol MONActivityIndicatorViewDelegate;
 
 @interface MONActivityIndicatorView : UIView
