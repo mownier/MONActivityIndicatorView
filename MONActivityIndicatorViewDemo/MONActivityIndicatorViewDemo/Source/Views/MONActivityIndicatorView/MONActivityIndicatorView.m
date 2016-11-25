@@ -34,7 +34,7 @@
  Creates the circle view.
  @param radius The radius of the circle.
  @param color The background color of the circle.
- @param positionX The x-position of the circle in the contentView.
+ @param x The x-position of the circle in the contentView.
  @return The circle view.
  */
 - (UIView *)createCircleWithRadius:(CGFloat)radius color:(UIColor *)color positionX:(CGFloat)x;
@@ -112,7 +112,6 @@
 
 - (CABasicAnimation *)createAnimationWithDuration:(CGFloat)duration delay:(CGFloat)delay {
     CABasicAnimation *anim = [CABasicAnimation animationWithKeyPath:@"transform.scale"];
-    anim.delegate = self;
     anim.fromValue = [NSNumber numberWithFloat:0.0f];
     anim.toValue = [NSNumber numberWithFloat:1.0f];
     anim.autoreverses = YES;
